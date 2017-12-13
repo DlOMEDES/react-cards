@@ -1,0 +1,66 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background-image: linear-gradient(to left bottom, rgba(119, 16, 99, 0.9), #320e3b);
+  height: 100vh;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 20%;
+  margin: 1rem;
+  position: relative;
+  height: 40rem;
+  padding: 2rem 0;
+  font-size: 1.6rem;
+  text-align: center; 
+}
+.card__side {
+  background-color: #f7f7f7;
+  transition: all .8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  height: 40rem;
+  box-shadow: 0 1.5rem 4rem rgba(32, 37, 40, 0.15); }
+.card__side--front {
+  width: 100%;
+  height: 40rem; 
+  
+}
+.card__side--back {
+  background-color: #262f3d;
+  width: 100%;
+  height: 40rem;
+  transform: rotateY(180deg); }
+.card:hover .card__side--front {
+  transform: rotateY(180deg); }
+.card:hover .card__side--back {
+  transform: rotateY(0deg); }
+
+
+.eng{
+  font-size: 3rem;
+  padding-top: 70%;
+  text-transform: uppercase;
+}
+
+.han{
+  color: #fff;
+  font-size: 6.3em;
+  padding-top: 30%;
+}
+
+.pin{
+    color: rgba(200, 10, 10, 1);
+    font-size: 2.3em;
+    padding-top: 10%;
+}
